@@ -71,29 +71,31 @@ nav a{
 }
 
 
-.home {
+.home{
     display: flex;
     background-color: rgb(226, 234, 239);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -20px;
-   
 }
 
-.card,.card-body,.quienes-somos{
+.home-cus,.home-viajes,.home-emmac,.home-profesorados,.home-torneos{
+    display: flex;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+}
+
+.card,.card-body,.estilo-card{
     border: none;
-    background-color: rgb(226, 234, 239);
+    background-color: transparent;
     align-items: center;
 }
 .card,.card-body,.info{
     border: none;
-    background-color: rgb(226, 234, 239);
+    background-color: transparent;
     align-items: center;
-}
-
-.volver a{
-        margin: 5px 0px 10px 650px;
-        color: rgb(55, 80, 100); 
 }
 
 .carousel-inner{
@@ -172,9 +174,9 @@ nav a{
 
 }
 
-.imagen-edades{
+/*.imagen-edades{
     margin-left: 200px;
-}
+}*/
 
 
 .logos-profesorados{
@@ -201,15 +203,9 @@ nav a{
 }
 
 
-.descargar-ficha{
-    margin: 10px 0px 15px 350px;
-}
-
-
 .container,.galeria-nosotros,.row,.col,.img{
        align-items: center;
 }
-
 
 
 @media (min-width: 300px) and (max-width:800px) {
