@@ -27,6 +27,7 @@ nav {
     position: sticky;
     margin-top: 0px;
     top:0px;
+    z-index:10;
 }
 
 nav a:hover{
@@ -149,7 +150,6 @@ nav a{
 
 
 .footer{
-    height: 200px;
     background-color: rgb(171, 210, 219);
     display: flex;
     padding: 10px;
@@ -209,11 +209,6 @@ nav a{
 .container,.galeria-nosotros,.row,.col,.img{
        align-items: center;
 }
-
-
-
-
-
 
 
 
