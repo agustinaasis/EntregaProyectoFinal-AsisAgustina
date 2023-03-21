@@ -174,33 +174,21 @@ nav a{
 
 }
 
-/*.imagen-edades{
-    margin-left: 200px;
-}*/
 
-
-.logos-profesorados{
+.logos-profesorados,.logos-torneos{
+    align-items: center;
     margin: 0px 0px 0px 150px;
-    width: 1050px;
+    width: 150px;
     height: 250px;
     padding: px;
     display: inline-block;
-
 }
 
 .logo-ipef,.logo-aerobics,.logo-quality,.logo-iacc,.logo-mantovani,.logo-sanmiguel,.logo-campa,.logo-ucfa,.logo-pro,.logo-esquiu,.logo-golden,.logo-torneoimperial{
-
     padding: 10px;
     display: inline-flex;
 }
 
-.logos-torneos{
-    margin: 0px 0px 0px 100px;
-    width: 1150px;
-    height: 250px;
-    padding: 10px;
-    display: inline-block;
-}
 
 
 .container,.galeria-nosotros,.row,.col,.img{
