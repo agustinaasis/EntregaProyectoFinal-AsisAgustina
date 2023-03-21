@@ -50,6 +50,16 @@ nav a{
     color: rgb(53, 68, 80);
 
 }
+
+.menu-desplegable,.btn-group,.btn,.btn-secondary,.dropdown-toggle{
+    
+    background-color: rgb(90, 143, 155); 
+    border: 0.5px solid;
+    border-radius: 5px;
+    border-color: rgb(137, 177, 177);
+}
+
+
 .encabezado-otros{
     background-image: url(../imagenes/portada\ face.jpg);
     background-repeat: no-repeat;
@@ -196,9 +206,29 @@ nav a{
 }
 
 
+
 @media (min-width: 300px) and (max-width:800px) {
-   nav a{
+   .menu-general{
+    display: none;
+   }
+
+   .video1 .video2{
     display: none;
    }
 
 }
+
+@media (min-width: 800px) and (max-width:1400px) {
+  .menu-desplegable{
+            display: none;
+    }
+
+}
+
+@media (min-width: 200px) and (max-width:800px) {
+    .menu-desplegable {
+        align-items: end;
+    }
+  
+      }
+  
