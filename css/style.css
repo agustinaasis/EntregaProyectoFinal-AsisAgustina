@@ -18,6 +18,7 @@
 
 
 h2{
+    font-size: 1.5em;
     display: flex;
     margin-left: 20px;
     color: rgb(55, 80, 100);    
@@ -38,8 +39,8 @@ nav ul{
     background-color: rgb(171, 210, 219); 
     display: flex;
     justify-content:center;
-
 }
+
 nav li{
     display: inline-block;
     padding: 20px;    
@@ -48,11 +49,9 @@ nav li{
 nav a{
     text-decoration: none;
     color: rgb(53, 68, 80);
-
 }
 
 .menu-desplegable,.btn-group,.btn,.btn-secondary,.dropdown-toggle{
-    
     background-color: rgb(90, 143, 155); 
     border: 0.5px solid;
     border-radius: 5px;
@@ -66,8 +65,8 @@ nav a{
     background-size: cover;
     height: 280px; 
     opacity: 0.7;
-
 }
+
 .encabezado-index{
     background-image: url(../imagenes/portadaindexshort.png);
     background-repeat: no-repeat;
@@ -102,6 +101,7 @@ nav a{
     background-color: transparent;
     align-items: center;
 }
+
 .card,.card-body,.info{
     border: none;
     background-color: transparent;
@@ -109,7 +109,8 @@ nav a{
 }
 
 .carousel-inner{
-    margin: 20px 10px 40px 20px;
+    margin: 10px 10px 40px 10px;
+    padding: 5px;
     width: 570px;
     height: 400px;
 }
@@ -160,21 +161,15 @@ nav a{
 
 }
 
-
 .footer{
     background-color: rgb(171, 210, 219);
     display: flex;
     padding: 10px;
 }
 
-.enlace-maps{
-    margin: 20px 0 0 -50px;
-}
-
 .container,.piedepagina{
     align-items: center;
 }
-
 
 .contacto1,.contacto2{
     margin: 20px 40px 60px 140px;
@@ -183,7 +178,6 @@ nav a{
     text-align: center;
 
 }
-
 
 .logos-profesorados,.logos-torneos{
     align-items: center;
@@ -194,27 +188,18 @@ nav a{
     display: inline-block;
 }
 
-.logo-ipef,.logo-aerobics,.logo-quality,.logo-iacc,.logo-mantovani,.logo-sanmiguel,.logo-campa,.logo-ucfa,.logo-pro,.logo-esquiu,.logo-golden,.logo-torneoimperial{
-    padding: 10px;
-    display: inline-flex;
-}
 
 
-
-.container,.galeria-nosotros,.row,.col,.img{
-       align-items: center;
-}
-
-
-
-@media (min-width: 300px) and (max-width:800px) {
+@media (min-width: 200px) and (max-width:800px) {
    .menu-general{
     display: none;
    }
 
-   .video1 .video2{
-    display: none;
-   }
+   .menu-desplegable {
+    align-items: end;
+}
+
+
 
 }
 
@@ -224,11 +209,3 @@ nav a{
     }
 
 }
-
-@media (min-width: 200px) and (max-width:800px) {
-    .menu-desplegable {
-        align-items: end;
-    }
-  
-      }
-  
