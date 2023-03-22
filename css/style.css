@@ -79,7 +79,6 @@ nav a{
     height: 300px;
 }
 
-
 .home{
     display: flex;
     background-color: rgb(226, 234, 239);
@@ -109,40 +108,40 @@ nav a{
 }
 
 .carousel-inner{
-    margin: 10px 10px 40px 10px;
+    margin: 20px 10px 40px 10px;
     padding: 5px;
     width: 570px;
     height: 400px;
 }
 
 .video1,.video2{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 
 .social-bar{
     position: fixed;
     right: 0;
-    top: 370px;
-    font-size: 20px;
+    top: 60%;
+    font-size: 1em;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     z-index: 2000;
 }
 
+
 .icon{
     display: inline-block;
     color: white;
     text-decoration: none;
     padding: 10px;
-    transition: all .5s;
+    transition: all .5s
 }
 
 .icon-facebook2{
     background-color: #097DE9;
     border-radius: 8px 0 0 0;
-
 }
 
 .icon-instagram{
@@ -158,7 +157,6 @@ nav a{
 .icon:hover{
     padding-right: 3rem;
     border-radius: 10px 0 0 10px;
-
 }
 
 .footer{
@@ -184,7 +182,6 @@ nav a{
     margin: 0px 0px 0px 150px;
     width: 150px;
     height: 250px;
-    padding: px;
     display: inline-block;
 }
 
@@ -197,9 +194,34 @@ nav a{
 
    .menu-desplegable {
     align-items: end;
-}
+    }
 
+    .h2,.home,.home-text{
+    text-align: center;
+   }
 
+   .logos-profesorados,.logos-torneos,.img{
+    margin: 15px 10px 10px 10px;
+    align-items: center;
+   }
+
+    .aerobics,.mantovani,.sanmiguel{
+    margin-left: -30px;
+
+   }
+
+    .carousel-inner{
+        width: 440px;
+        margin-bottom: 5px;
+    }
+
+    .video1{
+        display: none;
+    }
+    
+    .video2{
+        margin: 5px 100px 20px 20px; 
+    }
 
 }
 
