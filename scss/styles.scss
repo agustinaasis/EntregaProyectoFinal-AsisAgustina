@@ -6,6 +6,8 @@
     list-style: none;
 }
 
+/*variables*/
+
 .home-text,.info-emmac,.info-profesorados,.info-profesorados2,.info-torneos,.info-torneos2,.info-cus,.nuestroequipo-info,.info-viajes{
     margin: 20px 20px 10px 50px;
     padding: 20px;
@@ -16,7 +18,6 @@
     color:rgba(36, 33, 33, 0.96)
 }
 
-
 h2{
     font-size: 1.5em;
     display: flex;
@@ -26,29 +27,31 @@ h2{
 
 nav {
     position: sticky;
-    margin-top: 0px;
     top:0px;
     z-index:10;
-}
 
-nav a:hover{
-    color:#025D83;
-}
+    a:hover{
+        color:#025D83;
+    }
 
-nav ul{
-    background-color: rgb(171, 210, 219); 
-    display: flex;
-    justify-content:center;
-}
+    ul{
+        background-color: rgb(171, 210, 219); 
+        display: flex;
+        justify-content:center;
 
-nav li{
-    display: inline-block;
-    padding: 20px;    
-}
+        li{
+            display: inline-block;
+            padding: 20px;   
+            
+                a{
+            text-decoration: none;
+            color: rgb(53, 68, 80);
+        }
+    }
 
-nav a{
-    text-decoration: none;
-    color: rgb(53, 68, 80);
+    }
+
+
 }
 
 .menu-desplegable,.btn-group,.btn,.btn-secondary,.dropdown-toggle{
@@ -57,7 +60,6 @@ nav a{
     border-radius: 5px;
     border-color: rgb(137, 177, 177);
 }
-
 
 .encabezado-otros{
     background-image: url(../imagenes/portadaface.jpg);
@@ -72,11 +74,11 @@ nav a{
     background-repeat: no-repeat;
     background-size: cover;
     height: 280px; 
-}
 
-.encabezado-index img{
-    width: 300px;
-    height: 300px;
+    img{
+        width: 300px;
+        height: 300px;
+    }
 }
 
 .home{
@@ -117,7 +119,6 @@ nav a{
 .video1,.video2{
     margin-top: 40px;
 }
-
 
 .social-bar{
     position: fixed;
@@ -163,19 +164,13 @@ nav a{
     background-color: rgb(171, 210, 219);
     display: flex;
     padding: 10px;
-}
 
-.container,.piedepagina{
+    .container,.piedepagina{
     align-items: center;
 }
 
-.contacto1,.contacto2{
-    margin: 20px 40px 60px 140px;
-    line-height: 30px;
-    color: rgb(53, 68, 80);  
-    text-align: center;
-
 }
+
 
 .logos-profesorados,.logos-torneos{
     align-items: center;
@@ -185,48 +180,4 @@ nav a{
     display: inline-block;
 }
 
-
-@media (min-width: 200px) and (max-width:800px) {
-   .menu-general{
-    display: none;
-   }
-
-   .menu-desplegable {
-    align-items: end;
-    }
-
-    h2,.home,.home-text{
-    text-align: center;
-   }
-
-   .logos-profesorados,.logos-torneos,.img{
-    margin: 15px 10px 10px 10px;
-    align-items: center;
-   }
-
-    .aerobics,.mantovani,.sanmiguel{
-    margin-left: -30px;
-
-   }
-
-    .carousel-inner{
-        width: 440px;
-        margin-bottom: 5px;
-    }
-
-    .video1{
-        display: none;
-    }
-    
-    .video2{
-        margin: 5px 100px 20px 20px; 
-    }
-
-}
-
-@media (min-width: 800px) and (max-width:1400px) {
-  .menu-desplegable{
-            display: none;
-    }
-
-}
+@import "queries"

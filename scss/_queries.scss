@@ -1,0 +1,46 @@
+
+@media (min-width: 200px) and (max-width:800px) {
+    .menu-general{
+     display: none;
+    }
+ 
+    .menu-desplegable {
+     align-items: end;
+     }
+ 
+     h2,.home,.home-text{
+     text-align: center;
+    }
+ 
+    .logos-profesorados,.logos-torneos,.img{
+     margin: 15px 10px 10px 10px;
+     align-items: center;
+    }
+ 
+     .aerobics,.mantovani,.sanmiguel{
+     margin-left: -30px;
+ 
+    }
+ 
+     .carousel-inner{
+         width: 430px;
+         margin-bottom: 5px;
+     }
+ 
+     .video1{
+         display: none;
+     }
+     
+     .video2{
+         margin: 5px 100px 20px 20px; 
+     }
+ 
+ }
+ 
+ @media (min-width: 800px) and (max-width:1400px) {
+   .menu-desplegable{
+             display: none;
+     }
+ 
+ }
+ 
