@@ -6,7 +6,6 @@
 }
 
 /*variables*/
-
 h1, h2 {
   color: rgb(55, 80, 100);
   font-size: 1.8em;
@@ -17,7 +16,7 @@ nav {
   top: 0px;
   z-index: 10;
 }
-nav a:hover {
+nav:hover {
   color: #025D83;
 }
 nav ul {
@@ -191,5 +190,15 @@ nav ul li a {
     display: none;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
+@media (min-width: 768px) and (max-width: 800px) {
+  .carousel-inner {
+    width: 620px;
+    margin: 5px 50px 5px 60px;
+  }
+  .video1 {
+    display: none;
+  }
+  .video2 {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

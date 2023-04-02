@@ -30,13 +30,29 @@
      .video2{
          margin: 5px 100px 20px 20px; 
      }
- 
- }
- 
- @media (min-width: 800px) and (max-width:1400px) {
-   .menu-desplegable{
-             display: none;
-     }
- 
- }
- 
+
+}
+
+@media (min-width: 800px) and (max-width:1400px) {
+    .menu-desplegable{
+            display: none;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width:800px){
+
+    .carousel-inner{
+        width: 620px;
+        margin: 5px 50px 5px 65px;
+    }
+    .video1{
+        display: none;
+    }
+    
+    .video2{
+        display: none; 
+    }
+
+}
+
