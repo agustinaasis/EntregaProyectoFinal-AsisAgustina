@@ -111,7 +111,7 @@ nav ul li a {
 }
 
 .video1, .video2 {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .social-bar {
@@ -166,14 +166,18 @@ nav ul li a {
   width: 150px;
   height: 250px;
   display: inline-block;
-  animation: move 1.2s;
+  animation: move 3s;
 }
 
 @keyframes move {
   from {
-    width: 210px;
+    width: 200px;
   }
 }
+.galeria-nosotros, .row, .img, .img-galeria-nos :hover {
+  animation: move 3s;
+}
+
 @media (min-width: 200px) and (max-width: 768px) {
   .menu-general {
     display: none;
@@ -184,6 +188,7 @@ nav ul li a {
   .logos-profesorados, .logos-torneos, .img {
     margin: 15px 10px 10px 10px;
     align-items: center;
+    animation: move none;
   }
   .aerobics, .mantovani, .sanmiguel {
     margin-left: -30px;

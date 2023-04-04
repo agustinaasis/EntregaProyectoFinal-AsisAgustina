@@ -114,7 +114,7 @@ h1,h2{
     }
     
     .video1,.video2{
-        margin-top: 40px;
+        margin-top: 0px;
     }
     
     .social-bar{
@@ -178,15 +178,19 @@ h1,h2{
         width: 150px;
         height: 250px;
         display: inline-block;
-        animation: move 1.2s;
+        animation: move 3s;
         }
 
 
 @keyframes move{
     from{
-        width: 210px;
+        width: 200px;
     }
 
+}
+
+.galeria-nosotros, .row, .img, .img-galeria-nos :hover{
+    animation: move 3s;
 }
 
 
