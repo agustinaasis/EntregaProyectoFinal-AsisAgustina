@@ -1,16 +1,19 @@
 
+/*import*/
 @import "partials/reset";
 @import "partials/variables";
 
+
+/*Estilos generales*/
 h1,h2{
     color: $color-titulos-principales;
     font-size: $tamano-titulos-principales;
     }
     
-    nav {
-        position: sticky;
-        top:0px;
-        z-index:10;
+nav {
+    position: sticky;
+    top:0px;
+    z-index:10;
     
         a:hover{
             color: #025D83;
@@ -58,19 +61,6 @@ h1,h2{
         color:$color-textos-principales
     }
     
-    
-    .encabezado-index{
-        background-image: $encabezado-principal;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 280px; 
-    
-        img{
-            width: 300px;
-            height: 300px;
-        }
-    }
-    
     .encabezado-otros{
         background-image: $encabezado-varios;
         background-repeat: no-repeat;
@@ -93,30 +83,7 @@ h1,h2{
         display: flex;
         margin-top: -20px;
     }
-    
-    .card,.card-body,.estilo-card{
-        border: none;
-        background-color: transparent;
-        align-items: center;
-    }
-    
-    .card,.card-body,.info{
-        border: none;
-        background-color: transparent;
-        align-items: center;
-    }
-    
-    .carousel-inner{
-        margin: 20px 10px 40px 10px;
-        padding: 5px;
-        width: 570px;
-        height: 400px;
-    }
-    
-    .video1,.video2{
-        margin-top: 0px;
-    }
-    
+
     .social-bar{
         position:fixed;
         right: 0;
@@ -155,24 +122,56 @@ h1,h2{
     
     }
     
-    
-    .footer{
+        .footer{
         background-color:$background-color;
         display: flex;
-        padding: 20px;
-    
-        .container,.piedepagina{
-        align-items: center;
-        margin-top: 20px;
+        padding: 20px;  
 
-        & p{
-            color: $color-textos-principales;
+            .container,.piedepagina{
+            align-items: center;
+            margin-top: 20px;
+                
+            &p{
+                color: $color-textos-principales;
+            }
         }
     }
 
+        /*Estilos Index*/
+
+        .encabezado-index{
+            background-image: $encabezado-principal;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 280px; 
     }
-    
-    .logos-profesorados,.logos-torneos{
+
+        .card,.card-body,.estilo-card{
+            border: none;
+            background-color: transparent;
+            align-items: center;
+        }
+        
+        .card,.card-body,.info{
+            border: none;
+            background-color: transparent;
+            align-items: center;
+        }
+        
+        .carousel-inner{
+            margin: 20px 10px 40px 10px;
+            padding: 5px;
+            width: 570px;
+            height: 400px;
+        }
+        
+        .video1,.video2{
+            margin-top: 0px;
+        
+        
+        }
+        /*Estilos logos de Profesorados y Torneos*/
+        .logos-profesorados,.logos-torneos{
         align-items: center;
         margin: 10px 0px -80px 170px;
         width: 150px;
@@ -180,18 +179,19 @@ h1,h2{
         display: inline-block;
         animation: move 3s;
         }
+        @keyframes move{
+            from{
+                width: 200px;
+            }
+        
+        }
 
 
-@keyframes move{
-    from{
-        width: 200px;
-    }
+        
+        /*Estilo galería nosotros*/
 
-}
-
-.galeria-nosotros, .row, .img, .img-galeria-nos :hover{
-    animation: move 3s;
-}
-
+        .galeria-nosotros, .img-galeria-nos{
+            animation: move 3s;
+        }
 
 @import "partials/queries";
