@@ -1,183 +1,193 @@
 
-@import url(partials/reset.scss);
-
-
-
+@import "partials/reset";
+@import "partials/variables";
 
 h1,h2{
-color: $color-titulos-principales;
-font-size: $tamano-titulos-principales;
-}
-
-nav {
-    position: sticky;
-    top:0px;
-    z-index:10;
-
-    &:hover{
-        color:#025D83;
+    color: $color-titulos-principales;
+    font-size: $tamano-titulos-principales;
     }
-
-    ul{
-        background-color: rgb(171, 210, 219); 
+    
+    nav {
+        position: sticky;
+        top:0px;
+        z-index:10;
+    
+        a:hover{
+            color: #025D83;
+        }
+    
+        ul{
+            background-color: rgb(171, 210, 219); 
+            display: flex;
+            justify-content:center;
+    
+            li{
+                display: inline-block;
+                padding: 20px;   
+                
+                    a{
+                text-decoration: none;
+                color: rgb(53, 68, 80);
+            }
+        }
+    
+        }
+    
+    }
+    
+    .menu-desplegable,.btn-group,.btn,.btn-secondary,.dropdown-toggle{
+        background-color: rgb(87, 144, 157); 
+        border: 0.5px solid;
+        border-radius: 1px;
+        border-color: rgb(115, 150, 150);
+    }
+    
+    
+    .dropdown-toggle, .btn{
+        color: #ffffff;
+    }
+    
+        
+    .home-text{
+        margin: 20px 20px 10px 50px;
+        padding: 20px;
+        width: 1950px;
+        overflow: hidden;  
+        font-family: Helvetica, sans-serif;
+        font-size: 1.1em;
+        color:$color-textos-principales
+    }
+    
+    
+    .encabezado-index{
+        background-image: $encabezado-principal;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 280px; 
+    
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    }
+    
+    .encabezado-otros{
+        background-image: $encabezado-varios;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 280px; 
+        opacity: 0.7;
+    }
+    
+    .home{
         display: flex;
-        justify-content:center;
-
-        li{
+        background-image: $background-general;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -20px;
+    }
+    
+    
+    .home-cus,.home-viajes,.home-emmac,.home-profesorados,.home-torneos{
+        background-image: $background-general;
+        display: flex;
+        margin-top: -20px;
+    }
+    
+    .card,.card-body,.estilo-card{
+        border: none;
+        background-color: transparent;
+        align-items: center;
+    }
+    
+    .card,.card-body,.info{
+        border: none;
+        background-color: transparent;
+        align-items: center;
+    }
+    
+    .carousel-inner{
+        margin: 20px 10px 40px 10px;
+        padding: 5px;
+        width: 570px;
+        height: 400px;
+    }
+    
+    .video1,.video2{
+        margin-top: 40px;
+    }
+    
+    .social-bar{
+        position:fixed;
+        right: 0;
+        top: 350px;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index:200;
+    
+        .icon{
             display: inline-block;
-            padding: 20px;   
-            
-                a{
+            color: white;
             text-decoration: none;
-            color: rgb(53, 68, 80);
+            padding: 10px;
+            transition: all .5s
+        }
+        .icon-facebook2{
+            background-color: #097DE9;
+            border-radius: 8px 0 0 0;
+        }
+    
+        .icon-instagram{
+            background-color: #E31234;
+        }
+    
+        .icon-whatsapp{
+            background-color:#148E0B;
+            border-radius:  0 0 0 10px;
+        }
+    
+        .icon:hover{
+            padding-right: 3rem;
+            border-radius: 10px 0 0 10px;
+        }
+    
+    }
+    
+    
+    .footer{
+        background-color:$background-color;
+        display: flex;
+        padding: 20px;
+    
+        .container,.piedepagina{
+        align-items: center;
+        margin-top: 20px;
+
+        & p{
+            color: $color-textos-principales;
         }
     }
 
     }
-
-}
-
-.menu-desplegable,.btn-group,.btn,.btn-secondary,.dropdown-toggle{
-    background-color: rgb(87, 144, 157); 
-    border: 0.5px solid;
-    border-radius: 1px;
-    border-color: rgb(115, 150, 150);
-}
-
-
-.dropdown-toggle, .btn{
-    color: #ffffff;
-}
-
-
-
-.home-text{
-    margin: 20px 20px 10px 50px;
-    padding: 20px;
-    width: 1950px;
-    overflow: hidden;  
-    font-family: Helvetica, sans-serif;
-    font-size: 1.1em;
-    color:$color-textos-principales
-}
-
-
-.encabezado-index{
-    background-image: $encabezado-principal;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 280px; 
-
-    img{
-        width: 300px;
-        height: 300px;
-    }
-}
-
-.encabezado-otros{
-    background-image: $encabezado-varios;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 280px; 
-    opacity: 0.7;
-}
-
-.home{
-    display: flex;
-    background-image: $background-general;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: -20px;
-}
-
-
-.home-cus,.home-viajes,.home-emmac,.home-profesorados,.home-torneos{
-    background-image: $background-general;
-    display: flex;
-    margin-top: -20px;
-}
-
-.card,.card-body,.estilo-card{
-    border: none;
-    background-color: transparent;
-    align-items: center;
-}
-
-.card,.card-body,.info{
-    border: none;
-    background-color: transparent;
-    align-items: center;
-}
-
-.carousel-inner{
-    margin: 20px 10px 40px 10px;
-    padding: 5px;
-    width: 570px;
-    height: 400px;
-}
-
-.video1,.video2{
-    margin-top: 40px;
-}
-
-.social-bar{
-    position:fixed;
-    right: 0;
-    top: 350px;
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index:200;
-
-    .icon{
+    
+    .logos-profesorados,.logos-torneos{
+        align-items: center;
+        margin: 10px 0px -80px 170px;
+        width: 150px;
+        height: 250px;
         display: inline-block;
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-        transition: all .5s
-    }
-    .icon-facebook2{
-        background-color: #097DE9;
-        border-radius: 8px 0 0 0;
-    }
+        animation: move 1.2s;
+        }
 
-    .icon-instagram{
-        background-color: #E31234;
-    }
 
-    .icon-whatsapp{
-        background-color:#148E0B;
-        border-radius:  0 0 0 10px;
-    }
-
-    .icon:hover{
-        padding-right: 3rem;
-        border-radius: 10px 0 0 10px;
+@keyframes move{
+    from{
+        width: 210px;
     }
 
 }
 
 
-.footer{
-    background-color:$background-color;
-    display: flex;
-    padding: 20px;
-
-    .container,.piedepagina{
-    align-items: center;
-    margin-top: 50px;
-}
-}
-
-.logos-profesorados,.logos-torneos{
-    align-items: center;
-    margin: 0px 0px 0px 150px;
-    width: 150px;
-    height: 250px;
-    display: inline-block;
-}
-
-
-@import url(partials/variables.scss);
-@import "queries"
+@import "partials/queries";
