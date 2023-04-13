@@ -136,6 +136,19 @@ nav ul li a {
   height: 280px;
 }
 
+.logo-principal img {
+  width: 320px;
+  height: 320px;
+}
+
+.texto-portada-principal img {
+  margin-top: 60px;
+  width: 500px;
+}
+.texto-portada-principal img:hover {
+  opacity: 0.2;
+}
+
 .card, .card-body, .estilo-card {
   border: none;
   background-color: transparent;
@@ -175,11 +188,14 @@ nav ul li a {
   }
 }
 /*Estilo galería nosotros*/
-.galeria-nosotros, .img-galeria-nos {
-  animation: move 3s;
+.galeria-nosotros, .row {
+  margin-top: 15px;
 }
 
 @media (min-width: 200px) and (max-width: 768px) {
+  .texto-portada-principal {
+    display: none;
+  }
   .menu-general {
     display: none;
   }
@@ -209,6 +225,9 @@ nav ul li a {
   }
 }
 @media (min-width: 768px) and (max-width: 800px) {
+  .texto-portada-principal {
+    display: none;
+  }
   .menu-general {
     display: none;
   }

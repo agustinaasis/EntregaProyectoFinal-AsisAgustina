@@ -140,6 +140,23 @@ nav {
             height: 280px; 
     }
 
+        .logo-principal img{
+            width: 320px;
+            height: 320px;
+        }
+
+        .texto-portada-principal img{
+            margin-top: 60px;
+            width: 500px;
+            
+            &:hover{
+                opacity: 0.2;
+            
+        }
+        
+        }
+
+
         .card,.card-body,.estilo-card{
             border: none;
             background-color: transparent;
@@ -181,7 +198,13 @@ nav {
         }
 
         /*Estilo galería nosotros*/
-        
-        .galeria-nosotros, .img-galeria-nos{
-            animation: move 3s;
-        }
+.galeria-nosotros, .row{
+    margin-top: 15px;
+}
+
+
+
+
+
+
+

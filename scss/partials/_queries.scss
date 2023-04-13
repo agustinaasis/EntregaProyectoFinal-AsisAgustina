@@ -1,5 +1,9 @@
 @media (min-width: 200px) and (max-width:768px) {
 
+    .texto-portada-principal{
+        display: none;
+    }
+
     .menu-general{
     display: none;
     }
@@ -39,6 +43,10 @@
 }
 
 @media (min-width: 768px) and (max-width:800px){
+
+    .texto-portada-principal{
+        display: none;
+    }
 
     .menu-general{
         display: none;
