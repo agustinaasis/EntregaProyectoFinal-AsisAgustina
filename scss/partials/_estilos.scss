@@ -1,16 +1,27 @@
 /*Estilos generales*/
-h1,h2{
+h1{
     color: $color-titulos-principales;
     font-size: $tamano-titulos-principales;
+    text-decoration:underline;
     }
     
+h2{
+    color: $color-titulos-h2;
+    font-size: $tamano-titulos-h2;
+    text-decoration:underline;
+}
+
+
 nav {
+    font-size: $tamano-textos-principales;
     position: sticky;
     top:0px;
     z-index:10;
     
         a:hover{
-            color: #025D83;
+            color: #345157;
+            border-bottom:rgb(225, 232, 239) 1px solid;
+            
         }
     
         ul{
@@ -38,8 +49,7 @@ nav {
         border-radius: 1px;
         border-color: rgb(115, 150, 150);
     }
-    
-    
+        
     .dropdown-toggle, .btn{
         color: #ffffff;
     }
@@ -50,7 +60,7 @@ nav {
         padding: 20px;
         overflow: hidden;  
         font-family: Helvetica, sans-serif;
-        font-size: 1.1em;
+        font-size: $tamano-textos-principales;
         color:$color-textos-principales
     }
     
@@ -92,7 +102,7 @@ nav {
             color: white;
             text-decoration: none;
             padding: 10px;
-            transition: all .5s
+            transition: all .8s
         }
         .icon-facebook2{
             background-color: #097DE9;
@@ -125,10 +135,16 @@ nav {
             margin-top: 20px;
                 
             &p{
-                color: $color-textos-principales;
+                color: $color-titulos-h2;
             }
         }
     }
+
+    .volver:hover{
+            color: #1a849c;
+            border-bottom:rgb(239, 225, 236) 1px solid;
+        }
+    
 
         /*Estilos Index*/
 
@@ -145,16 +161,14 @@ nav {
         }
 
         .texto-portada-principal img{
-            margin-top: 60px;
-            width: 500px;
-            
-            &:hover{
-                opacity: 0.2;
-            
+            margin-top: 140px;
+            width: 450px;
+            animation: aparecer 1.8s alternate-reverse;
         }
         
+        @keyframes aparecer {
+                to{width: 0px;}       
         }
-
 
         .card,.card-body,.estilo-card{
             border: none;
@@ -197,9 +211,20 @@ nav {
         }
 
         /*Estilo galería nosotros*/
+
 .galeria-nosotros, .row{
     margin-top: 15px;
+
+    .img-galeria-nos:hover{
+        
+        width: 270px;
+
+    }
+
 }
+
+
+
 
 
 
