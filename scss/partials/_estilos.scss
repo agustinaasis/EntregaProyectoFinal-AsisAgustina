@@ -128,22 +128,19 @@ nav {
         .footer{
         background-color:$background-color;
         display: flex;
-        padding: 20px;  
+        padding: 15px;  
 
             .container,.piedepagina{
             align-items: center;
             margin-top: 20px;
-                
-            &p{
-                color: $color-titulos-h2;
+            color: $color-titulos-h2;
             }
         }
-    }
 
-    .volver:hover{
-            color: #1a849c;
-            border-bottom:rgb(239, 225, 236) 1px solid;
-        }
+        .volver:hover{
+                color: #1a849c;
+                border-bottom:rgb(239, 225, 236) 1px solid;
+            }
     
 
         /*Estilos Index*/

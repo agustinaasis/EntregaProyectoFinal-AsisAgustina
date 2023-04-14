@@ -126,13 +126,11 @@ nav ul li a {
 .footer {
   background-color: rgb(171, 210, 219);
   display: flex;
-  padding: 20px;
+  padding: 15px;
 }
 .footer .container, .footer .piedepagina {
   align-items: center;
   margin-top: 20px;
-}
-.footer .containerp, .footer .piedepaginap {
   color: rgb(63, 78, 90);
 }
 
@@ -230,14 +228,15 @@ nav ul li a {
     margin-left: -30px;
   }
   .carousel-inner {
-    width: 430px;
-    margin-bottom: 5px;
+    width: 420px;
+    margin-bottom: -25px;
+    margin-left: 3px;
   }
   .video1 {
     display: none;
   }
   .video2 {
-    margin: 5px 100px 20px 20px;
+    margin: 5px 50px 0px;
   }
   .enlace-maps {
     margin-bottom: 20px;
