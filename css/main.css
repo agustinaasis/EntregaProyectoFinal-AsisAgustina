@@ -52,7 +52,7 @@ nav ul li a {
   background-color: rgb(87, 144, 157);
   border: 0.5px solid;
   border-radius: 1px;
-  border-color: rgb(115, 150, 150);
+  border-color: rgb(101, 160, 160);
 }
 
 .dropdown-toggle, .btn {
@@ -241,6 +241,12 @@ nav ul li a {
   }
   .enlace-maps {
     margin-bottom: 20px;
+  }
+  .social-bar {
+    font-size: 0.9em;
+  }
+  .social-bar .icon {
+    padding: 7px;
   }
 }
 @media (min-width: 768px) and (max-width: 800px) {
