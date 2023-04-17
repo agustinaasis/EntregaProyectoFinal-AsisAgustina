@@ -1,5 +1,15 @@
 @media (min-width: 200px) and (max-width:768px) {
 
+    .logo-principal img{
+        width: 160px;
+        height: 190px;
+        margin-left: 40px;
+    }
+
+    .encabezado-index{
+        height: 220px; 
+    }
+
     .texto-portada-principal{
         display: none;
     }
@@ -12,31 +22,46 @@
         text-align: center;
     }
 
+    .cuadro-edades-emmac{
+        font-size: 0.9em;
+    }
+
     .logos-profesorados,.logos-torneos,.img{
-    margin: 15px 10px 10px 10px;
+    margin: 15px 10px -60px 10px;
     align-items: center;
     animation: move none;
-
 }
 
     .aerobics,.mantovani,.sanmiguel{
-    margin-left: -30px;
+    margin-left: -40px;
+    }
 
+    .quality{
+        width: 165px;
+        margin-left: -20px;
+    }
+
+    .logos-torneos, .logo-campa{
+        width: 200px;
+        margin-top: -20px;
     }
 
     .carousel-inner{
         width: 420px;
         margin-bottom: -25px;
-        margin-left: 3px;
-
+        margin-left: 15px;
     }
+
+    
+
+
 
     .video1{
         display: none;
     }
     
     .video2{
-        margin: 5px 50px 0px; 
+        margin: 5px 110px 0px; 
     }
 
     .enlace-maps{
@@ -47,10 +72,11 @@
         font-size: 0.9em;
         .icon{
             padding: 7px;
-             }
+            }
     }
 
 }
+
 
 @media (min-width: 768px) and (max-width:800px){
 
@@ -95,7 +121,7 @@
 
 }
 
-@media (min-width: 800px) and (max-width:1400px) {
+@media (min-width: 800px) and (max-width:1800px) {
     .menu-desplegable{
             display: none;
     }

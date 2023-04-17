@@ -2,15 +2,20 @@
 h1{
     color: $color-titulos-principales;
     font-size: $tamano-titulos-principales;
-    text-decoration:underline;
+    &:hover{
+        color: #3e697b;
+        text-decoration: underline rgb(100, 127, 137);
+    }
     }
     
 h2{
     color: $color-titulos-h2;
     font-size: $tamano-titulos-h2;
-    text-decoration:underline;
+    &:hover{
+        color: #3e697b;
+        text-decoration: underline rgb(137, 153, 159);
+    }
 }
-
 
 nav {
     font-size: $tamano-textos-principales;
@@ -35,7 +40,7 @@ nav {
                 
                     a{
                 text-decoration: none;
-                color: rgb(53, 68, 80);
+                color: rgb(49, 79, 104);
             }
         }
     
@@ -44,20 +49,25 @@ nav {
     }
     
     .menu-desplegable,.btn-group,.btn,.btn-secondary,.dropdown-toggle{
+        font-size: 1em;
         background-color: rgb(87, 144, 157); 
         border: 0.5px solid;
         border-radius: 1px;
-        border-color: rgb(101, 160, 160);
-    }
-        
-    .dropdown-toggle, .btn{
-        color: #ffffff;
-    }
-    
-        
+        border-color: rgb(101, 160, 160); }
+
+        .dropdown-item{
+            font-size: 0.9em;
+            margin: 0px 5px 5px 0px;
+            background-color: #eaf6f7;
+            padding: 0px;
+                        .a .b{
+                align-items: center;
+            }
+        }
+
     .home-text{
-        margin: 20px 20px 10px 50px;
-        padding: 20px;
+        margin: 0px 20px 10px 50px;
+        padding: 50px;
         overflow: hidden;  
         font-family: Helvetica, sans-serif;
         font-size: $tamano-textos-principales;
@@ -90,12 +100,12 @@ nav {
     .social-bar{
         position:fixed;
         right: 0;
-        top: 350px;
+        top: 380px;
         font-size: 1em;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        z-index:200;
+        z-index: index 1;
     
         .icon{
             display: inline-block;
@@ -124,6 +134,20 @@ nav {
         }
     
     }
+
+        .volver .volver1{
+            color: $color-titulos-principales;
+            text-decoration: none;
+            margin-top: 10px;
+            margin-bottom: 7px;
+
+            &:hover{
+                font-size: 1.1em;
+                color: #14778d;            
+                
+            }
+        }
+
     
         .footer{
         background-color:$background-color;
@@ -131,17 +155,19 @@ nav {
         padding: 15px;  
 
             .container,.piedepagina{
-            align-items: center;
             margin-top: 20px;
             color: $color-titulos-h2;
+
+            .enlace-maps{
+                margin-left: -10px;
+            }
+
+            .footer-info{
+                padding: 5px;
+                margin-top: 20px;
+            }
             }
         }
-
-        .volver:hover{
-                color: #1a849c;
-                border-bottom:rgb(239, 225, 236) 1px solid;
-            }
-    
 
         /*Estilos Index*/
 
@@ -153,8 +179,9 @@ nav {
     }
 
         .logo-principal img{
-            width: 320px;
-            height: 320px;
+            margin-top: 20px;
+            width: 230px;
+            height: 250px;
         }
 
         .texto-portada-principal img{
@@ -180,17 +207,49 @@ nav {
         }
         
         .carousel-inner{
-            margin: 20px 10px 40px 10px;
-            padding: 5px;
+            margin: -40px 10px 50px 80px;
             width: 570px;
             height: 400px;
         }
         
         .video1,.video2{
-            margin-top: 0px;
-        
-        
+            margin: -45px 30px;        
         }
+
+
+        /*Estilos hoja E.M.M.A.C*/
+
+        .cuadro-edades-emmac{
+            font-size: 0.9em;
+            color: #1b5b76;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .filas-cuadro-emmac, .columnas-cuadro-edades{
+            padding: 5px;
+            border: #a0babf 0.5px solid;
+            border-radius: 5px;
+            &:hover{
+                background-color: #204363;
+                color: #f0f2f6;
+            }
+        }
+        .titulo-cuadro{
+            text-decoration: underline;
+
+        }
+        .edades-emmac{
+            align-content: center;
+        }
+
+        .edades-emmac-1{
+            background-color: #5b8e96;
+            color: #f0f2f6;
+        }
+
+
+
         /*Estilos logos de Profesorados y Torneos*/
         .logos-profesorados,.logos-torneos{
         align-items: center;
@@ -208,17 +267,13 @@ nav {
         }
 
         /*Estilo galería nosotros*/
-
-.galeria-nosotros, .row{
-    margin-top: 15px;
-
-    .img-galeria-nos:hover{
-        
-        width: 270px;
-
-    }
-
+.titulo-galeria-nosotros{
+    margin-top: -17px;
 }
+.img-galeria-nos:hover{
+        width: 260px;
+}
+
 
 
 

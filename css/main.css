@@ -15,13 +15,19 @@
 h1 {
   color: rgb(33, 62, 86);
   font-size: 1.4em;
-  text-decoration: underline;
+}
+h1:hover {
+  color: #3e697b;
+  text-decoration: underline rgb(100, 127, 137);
 }
 
 h2 {
   color: rgb(63, 78, 90);
   font-size: 1.2em;
-  text-decoration: underline;
+}
+h2:hover {
+  color: #3e697b;
+  text-decoration: underline rgb(137, 153, 159);
 }
 
 nav {
@@ -45,23 +51,30 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: rgb(53, 68, 80);
+  color: rgb(49, 79, 104);
 }
 
 .menu-desplegable, .btn-group, .btn, .btn-secondary, .dropdown-toggle {
+  font-size: 1em;
   background-color: rgb(87, 144, 157);
   border: 0.5px solid;
   border-radius: 1px;
   border-color: rgb(101, 160, 160);
 }
 
-.dropdown-toggle, .btn {
-  color: #ffffff;
+.dropdown-item {
+  font-size: 0.9em;
+  margin: 0px 5px 5px 0px;
+  background-color: #eaf6f7;
+  padding: 0px;
+}
+.dropdown-item .a .b {
+  align-items: center;
 }
 
 .home-text {
-  margin: 20px 20px 10px 50px;
-  padding: 20px;
+  margin: 0px 20px 10px 50px;
+  padding: 50px;
   overflow: hidden;
   font-family: Helvetica, sans-serif;
   font-size: 1.2em;
@@ -93,12 +106,12 @@ nav ul li a {
 .social-bar {
   position: fixed;
   right: 0;
-  top: 350px;
+  top: 380px;
   font-size: 1em;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  z-index: 200;
+  z-index: index 1;
 }
 .social-bar .icon {
   display: inline-block;
@@ -123,20 +136,32 @@ nav ul li a {
   border-radius: 10px 0 0 10px;
 }
 
+.volver .volver1 {
+  color: rgb(33, 62, 86);
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+.volver .volver1:hover {
+  font-size: 1.1em;
+  color: #14778d;
+}
+
 .footer {
   background-color: rgb(171, 210, 219);
   display: flex;
   padding: 15px;
 }
 .footer .container, .footer .piedepagina {
-  align-items: center;
   margin-top: 20px;
   color: rgb(63, 78, 90);
 }
-
-.volver:hover {
-  color: #1a849c;
-  border-bottom: rgb(239, 225, 236) 1px solid;
+.footer .container .enlace-maps, .footer .piedepagina .enlace-maps {
+  margin-left: -10px;
+}
+.footer .container .footer-info, .footer .piedepagina .footer-info {
+  padding: 5px;
+  margin-top: 20px;
 }
 
 /*Estilos Index*/
@@ -148,8 +173,9 @@ nav ul li a {
 }
 
 .logo-principal img {
-  width: 320px;
-  height: 320px;
+  margin-top: 20px;
+  width: 230px;
+  height: 250px;
 }
 
 .texto-portada-principal img {
@@ -176,14 +202,44 @@ nav ul li a {
 }
 
 .carousel-inner {
-  margin: 20px 10px 40px 10px;
-  padding: 5px;
+  margin: -40px 10px 50px 80px;
   width: 570px;
   height: 400px;
 }
 
 .video1, .video2 {
-  margin-top: 0px;
+  margin: -45px 30px;
+}
+
+/*Estilos hoja E.M.M.A.C*/
+.cuadro-edades-emmac {
+  font-size: 0.9em;
+  color: #1b5b76;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.filas-cuadro-emmac, .columnas-cuadro-edades {
+  padding: 5px;
+  border: #a0babf 0.5px solid;
+  border-radius: 5px;
+}
+.filas-cuadro-emmac:hover, .columnas-cuadro-edades:hover {
+  background-color: #204363;
+  color: #f0f2f6;
+}
+
+.titulo-cuadro {
+  text-decoration: underline;
+}
+
+.edades-emmac {
+  align-content: center;
+}
+
+.edades-emmac-1 {
+  background-color: #5b8e96;
+  color: #f0f2f6;
 }
 
 /*Estilos logos de Profesorados y Torneos*/
@@ -202,14 +258,23 @@ nav ul li a {
   }
 }
 /*Estilo galería nosotros*/
-.galeria-nosotros, .row {
-  margin-top: 15px;
+.titulo-galeria-nosotros {
+  margin-top: -17px;
 }
-.galeria-nosotros .img-galeria-nos:hover, .row .img-galeria-nos:hover {
-  width: 270px;
+
+.img-galeria-nos:hover {
+  width: 260px;
 }
 
 @media (min-width: 200px) and (max-width: 768px) {
+  .logo-principal img {
+    width: 160px;
+    height: 190px;
+    margin-left: 40px;
+  }
+  .encabezado-index {
+    height: 220px;
+  }
   .texto-portada-principal {
     display: none;
   }
@@ -219,24 +284,35 @@ nav ul li a {
   .home, .home-text {
     text-align: center;
   }
+  .cuadro-edades-emmac {
+    font-size: 0.9em;
+  }
   .logos-profesorados, .logos-torneos, .img {
-    margin: 15px 10px 10px 10px;
+    margin: 15px 10px -60px 10px;
     align-items: center;
     animation: move none;
   }
   .aerobics, .mantovani, .sanmiguel {
-    margin-left: -30px;
+    margin-left: -40px;
+  }
+  .quality {
+    width: 165px;
+    margin-left: -20px;
+  }
+  .logos-torneos, .logo-campa {
+    width: 200px;
+    margin-top: -20px;
   }
   .carousel-inner {
     width: 420px;
     margin-bottom: -25px;
-    margin-left: 3px;
+    margin-left: 15px;
   }
   .video1 {
     display: none;
   }
   .video2 {
-    margin: 5px 50px 0px;
+    margin: 5px 110px 0px;
   }
   .enlace-maps {
     margin-bottom: 20px;
@@ -279,7 +355,7 @@ nav ul li a {
     margin-bottom: 20px;
   }
 }
-@media (min-width: 800px) and (max-width: 1400px) {
+@media (min-width: 800px) and (max-width: 1800px) {
   .menu-desplegable {
     display: none;
   }
